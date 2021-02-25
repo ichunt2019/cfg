@@ -3,7 +3,6 @@ package lib
 import (
 	"bytes"
 	"fmt"
-	"github.com/spf13/cast"
 	"io/ioutil"
 	"os"
 	//"reflect"
@@ -19,11 +18,11 @@ type ichuntCfg struct {
 }
 
 
-func (v *ichuntCfg) GetStringSL(key string) string {
-	fmt.Println(v.Get(key))
-	fmt.Println(v.Get(key))
-	return cast.ToString(v.Get(key))
-}
+//func (v *ichuntCfg) GetStringSL(key string) string {
+//	fmt.Println(v.Get(key))
+//	fmt.Println(v.Get(key))
+//	return cast.ToString(v.Get(key))
+//}
 
 func (v *ichuntCfg) GetLixinString(key string) string {
 	tmp := v.Get(key)
