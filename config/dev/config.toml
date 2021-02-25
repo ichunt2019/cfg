@@ -1,0 +1,44 @@
+title = "TOML 例子"
+
+viewpath = "/home/www/templates/"
+
+
+
+[owner]
+name = "Tom Preston-Werner"
+organization = "GitHub"
+bio = "GitHub Cofounder & CEO\nLikes tater tots and beer."
+dob = 1979-05-27T07:32:00Z # 日期时间是一等公民。为什么不呢？
+
+
+
+[servers]
+  # 你可以依照你的意愿缩进。使用空格或Tab。TOML不会在意。
+  [servers.alpha]
+  ip = "10.0.0.1"
+  dc = "eqdc10"
+
+  [servers.beta]
+  ip = "10.0.0.2"
+  dc = "eqdc10"
+
+[clients]
+data = [["gamma", "delta"],[1, 2]]
+
+
+#在数组里换行没有关系。
+hosts = [
+  "alpha",
+  "omega"
+]
+
+
+
+[database]
+    [database.default]
+        host = "192.168.2.246"
+
+[supplier_no_brand]
+    3 = [615,757,46596,43172,52,46481,47811,48817]
+    7 =   [47778]
+    9 =   [47778,4589,12369]
