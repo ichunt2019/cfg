@@ -39,7 +39,7 @@ func TestConfig(t *testing.T) {
 		    7 =   [47778]
 		    9 =   [47778,4589,12369]
 	*/
-	b := lib.Instance("config").GetStringMapStringSlice("supplier_no_brand")
-	fmt.Println(b["3"])  //[615 757 46596 43172 52 46481 47811 48817]
-	fmt.Println(b["7"])  //[47778]
+		b := lib.Instance("config").GetStringMapStringSlice("supplier_no_brand")
+		fmt.Println(b["3"])  //[615 757 46596 43172 52 46481 47811 48817]
+		fmt.Println(b["7"])  //[47778]
 }
