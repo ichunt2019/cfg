@@ -54,7 +54,10 @@ func initViperConf(ConfEnvPath string) error {
 			v := viper.New()
 			v.SetConfigType("toml")
 			//fmt.Println(bytes.NewBuffer(bts))
-			v.ReadConfig(bytes.NewBuffer(bts))
+			err = v.ReadConfig(bytes.NewBuffer(bts))
+			if err != nil{
+				panic(err)
+			}
 			pathArr := strings.Split(fo.Name(), ".")
 			if Cfg == nil {
 				Cfg = make(map[string]*ichuntCfg)
